@@ -1,0 +1,74 @@
+<div class="container py-5">
+
+  <div class="row mb-3">
+    <div class="col-12 text-center tittle">
+      <h1>你想對誰說e04話？</h1>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-12">
+      <div class="row justify-content-between">
+        <form method="POST" action="/" class="col-12">
+          <div class="row m-3 form-inline character-list">
+            <div class="col-4 character">
+              <div class="card border-0">
+                <img src="https://assets-lighthouse.s3.amazonaws.com/uploads/image/file/5668/angry-developer.jpg"
+                  class="card-img-top" alt="engineer">
+                <div class="card-body">
+                  <div class="form-group form-check">
+                    <input type="radio" class="form-check-input" id="engineer" name="selectTarget" value="engineer">
+                    <label class="form-check-label" for="engineer">工程師</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-4 character">
+              <div class="card border-0">
+                <img src="https://assets-lighthouse.s3.amazonaws.com/uploads/image/file/5667/angry-designer.jpg"
+                  class="card-img-top" alt="designer">
+                <div class="card-body">
+                  <div class="form-group form-check">
+                    <input type="radio" class="form-check-input" id="designer" name="selectTarget" value="designer">
+                    <label class="form-check-label" for="designer">設計師</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-4 character">
+              <div class="card border-0">
+                <img src="https://assets-lighthouse.s3.amazonaws.com/uploads/image/file/5669/angry-founder.jpg"
+                  class="card-img-top" alt="entrepreneur">
+                <div class="card-body">
+                  <div class="form-group form-check">
+                    <input type="radio" class="form-check-input" id="entrepreneur" name="selectTarget"
+                      value="entrepreneur">
+                    <label class="form-check-label" for="entrepreneur">創業家</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row m-3 talk-rubbish">
+            <div class="col-12 ">
+              <div class="row">
+                <div class="col-3 text-center">
+                  <button class="btn btn-success" type="submit">產生e04話</button>
+                </div>
+                <div class="col-9 border text-dark text-center talk-result">
+                  <p>{{talkRubbish}}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          {{!-- <button class="btn btn-success" type="submit">產生e04話</button> --}}
+        </form>
+      </div>
+
+    </div>
+  </div>
+
+
+</div>
